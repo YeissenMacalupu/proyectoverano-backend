@@ -1,3 +1,4 @@
 .env
-node_moduless
-jspm_packages/
+node_modules
+package-lock.json
+prueba
