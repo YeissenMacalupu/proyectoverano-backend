@@ -8,6 +8,7 @@ var mongoose = require("mongoose");
 require("dotenv").config();
 const app = express();
 const port = 3000;
+mongoose.set('strictQuery', true);
 
 mongoose.connect(process.env.mongodb_conexion)
     //Comprobamos con then - catch si funciona //
