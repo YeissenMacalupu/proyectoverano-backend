@@ -1,9 +1,17 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
+const productos = require('./routes/productos');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+//TRANSFORMAR A JSON LA INFORMACION
+app.use(express.json());
+// MIDDLEWARE
+
+app.use('/api', productos);
+
 
 //RUTAS
 app.get('/', (req, res) => {
@@ -27,12 +35,13 @@ app.listen(port, () => console.log('Servidor funcionando en el puerto', port));
 
 
 
+// .ENV
+/**   mongodb_conexion = mongodb+srv://proyectoverano:proyectoverano123@proyectoverano.dxq7gjb.mongodb.net/Productos?retryWrites=true&w=majority     */
 
 
 
 
 //Requieres
-
 // const { append } = require("express/lib/response");
 /*const express = require("express");
 var mongoose = require("mongoose");
