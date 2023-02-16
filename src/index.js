@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const productos = require('./routes/productos');
+const monitores = require('./routes/monitores');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,6 +12,7 @@ app.use(express.json());
 // MIDDLEWARE
 
 app.use('/api', productos);
+app.use('/api', monitores);
 
 
 //RUTAS
