@@ -1,6 +1,11 @@
+*** = Sera el prefico de los que ya se hicieron 
 
-{
-	-categoria
+El orden del models tiene que estar tan cual lo de abajo.
+
+En producto y monitores ya esta creado solo le aumentas los 3 que faltan (marca, descripcion, categoria). 
+
+
+{	
 	-nameProduct
 	-precio
 	-imagen
@@ -23,9 +28,9 @@ DIEGO
 
 YO
 ---------------------------------------------------------------------------
-8. case
-9. fuente de poder 
-10. placa madre
+8. case ***
+9. fuente de poder ***
+10. placa madre ***
 11. almacenamiento
 12. mouse & teclado
 13. refrigeracion 

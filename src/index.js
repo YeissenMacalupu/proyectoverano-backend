@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const productos = require('./routes/productos');
 const monitores = require('./routes/monitores');
+const cases = require('./routes/case');
+const fuente_de_poder = require('./routes/fuente_de_poder');
+const placa_madre = require('./routes/placa_madre');
 const morgan = require('morgan');
 
 const app = express();
@@ -17,6 +20,9 @@ app.use(morgan('tiny'));
 app.use(cors());
 app.use('/api', productos);
 app.use('/api', monitores);
+app.use('/api', cases);
+app.use('/api', fuente_de_poder);
+app.use('/api', placa_madre);
 
 //RUTAS
 app.get('/', (req, res) => {
