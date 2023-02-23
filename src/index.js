@@ -1,19 +1,22 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const productos = require('./routes/productos');
 const monitores = require('./routes/monitores');
+const morgan = require('morgan');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 //TRANSFORMAR A JSON LA INFORMACION
 app.use(express.json());
-// MIDDLEWARE
 
+// MIDDLEWARE
+app.use(morgan('tiny'));
+app.use(cors());
 app.use('/api', productos);
 app.use('/api', monitores);
-
 
 //RUTAS
 app.get('/', (req, res) => {
@@ -22,23 +25,24 @@ app.get('/', (req, res) => {
 
 mongoose.set('strictQuery', true);
 
-
 //CONECTANDO A MONGO DB ATLAS
 
 mongoose.connect(process.env.mongodb_conexion)
     .then(() => console.log("Conexion correcta a MongoDB Atlas"))
     .catch((error) => console.error(error));
 
-
 //COMPROBAMOS QUE ESTE ESCUCHANDO EL PUERTO
 app.listen(port, () => console.log('Servidor funcionando en el puerto', port));
 
 
 
-
-
 // .ENV
 /**   mongodb_conexion = mongodb+srv://proyectoverano:proyectoverano123@proyectoverano.dxq7gjb.mongodb.net/Productos?retryWrites=true&w=majority     */
+
+
+
+
+
 
 
 
