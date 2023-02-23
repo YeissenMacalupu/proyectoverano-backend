@@ -1,0 +1,34 @@
+
+{
+	-categoria
+	-nameProduct
+	-precio
+	-imagen
+	-marca
+	-descripcion 
+	-categoria 
+}
+
+
+DIEGO
+---------------------------------------------------------------------------
+1. computadoras
+2. laptops
+3. memoria
+4. monitores
+5. productos
+6. tarjetas de video
+7. procesadores
+
+
+YO
+---------------------------------------------------------------------------
+8. case
+9. fuente de poder 
+10. placa madre
+11. almacenamiento
+12. mouse & teclado
+13. refrigeracion 
+14. cooler 
+15. perifericos
+

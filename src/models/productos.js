@@ -16,8 +16,6 @@ const productosSchema = mongoose.Schema({
         type: String,
         required: true
     },
-
-
 });
 
 module.exports = mongoose.model('Laptops', productosSchema)
