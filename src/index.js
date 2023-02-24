@@ -12,6 +12,10 @@ const mouse_teclado = require('./routes/mouse_teclado');
 const refrigeracion = require('./routes/refrigeracion');
 const cooler = require('./routes/cooler');
 const perifericos = require('./routes/perifericos');
+const computadoras = require('./routes/computadoras');
+const memoria_ram = require('./routes/memoria_ram');
+const tarjetas_de_video = require('./routes/tarjetas_de_video');
+
 const morgan = require('morgan');
 
 const app = express();
@@ -33,6 +37,10 @@ app.use('/api', mouse_teclado);
 app.use('/api', refrigeracion);
 app.use('/api', cooler);
 app.use('/api', perifericos);
+app.use('/api', computadoras);
+app.use('/api', memoria_ram);
+app.use('/api', tarjetas_de_video);
+
 
 //RUTAS
 app.get('/', (req, res) => {
