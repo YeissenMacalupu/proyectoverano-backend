@@ -7,6 +7,11 @@ const monitores = require('./routes/monitores');
 const cases = require('./routes/case');
 const fuente_de_poder = require('./routes/fuente_de_poder');
 const placa_madre = require('./routes/placa_madre');
+const almacenamiento = require('./routes/almacenamiento');
+const mouse_teclado = require('./routes/mouse_teclado');
+const refrigeracion = require('./routes/refrigeracion');
+const cooler = require('./routes/cooler');
+const perifericos = require('./routes/perifericos');
 const morgan = require('morgan');
 
 const app = express();
@@ -23,6 +28,11 @@ app.use('/api', monitores);
 app.use('/api', cases);
 app.use('/api', fuente_de_poder);
 app.use('/api', placa_madre);
+app.use('/api', almacenamiento);
+app.use('/api', mouse_teclado);
+app.use('/api', refrigeracion);
+app.use('/api', cooler);
+app.use('/api', perifericos);
 
 //RUTAS
 app.get('/', (req, res) => {
