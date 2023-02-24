@@ -18,4 +18,4 @@ const procesadoresSchema = mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model('Tarjeta_de_video', tarjetas_de_videoSchema)
+module.exports = mongoose.model('Tarjeta de video', procesadoresSchema)
