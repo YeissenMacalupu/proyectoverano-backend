@@ -33,9 +33,9 @@ router.get('/cases/:id', (req, res) => {
 // UPDATE a producto
 router.put('/cases/:id', (req, res) => {
     const { id } = req.params;
-    const { nameProduct, imagen, precio, marca, descripcion, categoria } = req.body;
+    const { nameProduct, imagen, precio, marca, categoria, descripcion } = req.body;
     caseSchema
-        .updateOne({ _id: id }, { $set: { nameProduct, imagen, precio, marca, descripcion, categoria } })
+        .updateOne({ _id: id }, { $set: { nameProduct, imagen, precio, marca, categoria, descripcion } })
         .then((data) => res.json(data))
         .catch((error) => res.json({ mensaje: error }));
 });

@@ -3,7 +3,6 @@
 const mongoose = require('mongoose');
 
 const caseSchema = mongoose.Schema({
-
     nameProduct: {
         type: String,
         required: true
@@ -21,13 +20,20 @@ const caseSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    descripcion: {
-        type: String,
-        required: true
-    },
     categoria: {
         type: String,
         required: true
+    },
+    descripcion: {
+        dimensions: {
+            type: String,
+            required: true
+        },
+        panelLateral: {
+            type: String,
+            required: true
+        },
+
     },
 });
 
