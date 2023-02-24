@@ -31,9 +31,9 @@ YO
 8. case ***
 9. fuente de poder ***
 10. placa madre ***
-11. almacenamiento
-12. mouse & teclado
-13. refrigeracion 
-14. cooler 
-15. perifericos
+11. almacenamiento ***
+12. mouse & teclado ***
+13. refrigeracion ***
+14. cooler ***
+15. perifericos ***
 
