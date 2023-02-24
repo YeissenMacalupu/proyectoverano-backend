@@ -7,6 +7,10 @@ const monitores = require('./routes/monitores');
 const cases = require('./routes/case');
 const fuente_de_poder = require('./routes/fuente_de_poder');
 const placa_madre = require('./routes/placa_madre');
+const memoria_ram = require('./routes/memoria_ram');
+const computadoras = require('./routes/computadoras');
+const tarjetas_de_video = require('./routes/tarjetas_de_video');
+
 const morgan = require('morgan');
 
 const app = express();
@@ -23,6 +27,10 @@ app.use('/api', monitores);
 app.use('/api', cases);
 app.use('/api', fuente_de_poder);
 app.use('/api', placa_madre);
+app.use('/api', memoria_ram);
+app.use('/api', computadoras);
+app.use('/api', tarjetas_de_video);
+
 
 //RUTAS
 app.get('/', (req, res) => {
