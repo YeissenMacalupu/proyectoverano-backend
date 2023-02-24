@@ -15,6 +15,8 @@ const perifericos = require('./routes/perifericos');
 const computadoras = require('./routes/computadoras');
 const memoria_ram = require('./routes/memoria_ram');
 const tarjetas_de_video = require('./routes/tarjetas_de_video');
+const procesadores = require('./routes/procesadores');
+
 
 const morgan = require('morgan');
 
@@ -40,6 +42,8 @@ app.use('/api', perifericos);
 app.use('/api', computadoras);
 app.use('/api', memoria_ram);
 app.use('/api', tarjetas_de_video);
+app.use('/api', procesadores);
+
 
 
 //RUTAS

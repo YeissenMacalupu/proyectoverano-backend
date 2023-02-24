@@ -16,6 +16,19 @@ const procesadoresSchema = mongoose.Schema({
         type: String,
         required: true
     },
+
+    marca: {
+        type: String,
+        required: true
+    },
+    descripcion: {
+        type: String,
+        required: true
+    },
+    categoria: {
+        type: String,
+        required: true
+    },
 });
 
-module.exports = mongoose.model('Tarjeta_de_video', tarjetas_de_videoSchema)
+module.exports = mongoose.model('Procesadores', procesadoresSchema)

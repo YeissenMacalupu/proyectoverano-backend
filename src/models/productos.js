@@ -16,6 +16,19 @@ const productosSchema = mongoose.Schema({
         type: String,
         required: true
     },
+
+    marca: {
+        type: String,
+        required: true
+    },
+    descripcion: {
+        type: String,
+        required: true
+    },
+    categoria: {
+        type: String,
+        required: true
+    },
 });
 
 module.exports = mongoose.model('Laptops', productosSchema)
