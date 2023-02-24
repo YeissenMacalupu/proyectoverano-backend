@@ -37,3 +37,19 @@ YO
 14. cooler ***
 15. perifericos ***
 
+---------------------------------------------------------------------------
+IDEA 
+
+{	
+	-nameProduct
+	-precio
+	-imagen
+	-marca
+	-categoria 
+	descripcion: {
+		-Dimensions
+		-Panel Lateral
+		-Puertos
+	}
+
+}
